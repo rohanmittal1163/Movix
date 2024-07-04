@@ -3,7 +3,6 @@ import Home from './Pages/Home/Home';
 import Search from './Pages/searchResults/Search';
 import Explore from './Pages/explore/Explore';
 import Details from './Pages/details/Details';
-import PageError from './Pages/404/pageError';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -11,6 +10,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { useDispatch } from 'react-redux';
 import { fetchGenre } from './Store/GenreSlice';
 import { useEffect } from 'react';
+import PageError from './Pages/404/PageError';
 
 function App() {
 	const client = new QueryClient();
